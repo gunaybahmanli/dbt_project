@@ -56,7 +56,8 @@ Dynamic table materialization: Bronze, Silver, and Gold models are materialized 
 ### Setup & Usage
 
 Clone the repository:
-```git clone https://github.com/gunaybahmanli/dbt_project.git
+```
+git clone https://github.com/gunaybahmanli/dbt_project.git
 cd dbt_project
 ```
 Create and activate a virtual environment:
@@ -80,3 +81,4 @@ Demo Medallion Architecture implemented with one Silver table and one Gold snaps
 Shows Bronze → Silver → Gold flow, model testing, snapshot creation, and macro usage.
 
 Full Dev → Prod workflow supported via dbt targets and catalog configuration.
+
