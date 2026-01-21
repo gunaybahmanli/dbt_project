@@ -10,8 +10,8 @@ This project implements a Medallion Architecture on Databricks using dbt as a de
 **Gold Layer:** Deduplicated table (gold_items) to demonstrate snapshot functionality.
 
 This setup shows how data flows from **Bronze → Silver → Gold** and how dbt models, tests, snapshots, and macros work together.
-
-**dbt_project/
+```
+dbt_project/
 │
 ├─ models/
 │   ├─ bronze/      # Raw staging tables
@@ -23,7 +23,8 @@ This setup shows how data flows from **Bronze → Silver → Gold** and how dbt 
 ├─ macros/          # Custom macros (multiply.sql)
 ├─ tests/           # Generic and business logic tests
 ├─ seeds/           # Lookup/dummy data (lookup.csv)
-└─ analyses/        # SQL/Jinja experiments**
+└─ analyses/        # SQL/Jinja experiments
+```
 
 ### Key Features
 
@@ -61,18 +62,26 @@ git clone https://github.com/gunaybahmanli/dbt_project.git
 cd dbt_project
 ```
 Create and activate a virtual environment:
-```uv init```
-```uv sync```
+```
+uv init
+uv sync
+```
 Install dbt packages:
-```uv add dbt-core```
-```uv add dbt-databricks``
+```
+uv add dbt-core
+uv add dbt-databricks
+```
 Configure Databricks credentials in profiles.yml.
 Run models and tests:
-```dbt run```
-```dbt test```
-```dbt run --select 'macros\bronze\'```
+```
+dbt run
+dbt test
+dbt run --select 'macros\bronze\'
+```
 Deploy to production catalog:
-```dbt build --target prod```
+```
+dbt build --target prod
+```
 
 ### Results
 
@@ -81,4 +90,5 @@ Demo Medallion Architecture implemented with one Silver table and one Gold snaps
 Shows Bronze → Silver → Gold flow, model testing, snapshot creation, and macro usage.
 
 Full Dev → Prod workflow supported via dbt targets and catalog configuration.
+
 
