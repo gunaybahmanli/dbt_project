@@ -39,7 +39,7 @@ Dynamic table materialization: Bronze, Silver, and Gold models are materialized 
 **Dev → Prod Deployment:** Full workflow using separate Databricks catalogs (dbt_project_dev → dbt_project_prod) and dbt targets.
 
 ### Medallion Architecture Workflow
-
+```
        Raw Data (Bronze Layer)
                  │
                  ▼
@@ -53,6 +53,7 @@ Dynamic table materialization: Bronze, Silver, and Gold models are materialized 
         ┌──────────────────┐
         │     gold_items   │
         └──────────────────┘
+```
 
 ### Setup & Usage
 
@@ -90,5 +91,6 @@ Demo Medallion Architecture implemented with one Silver table and one Gold snaps
 Shows Bronze → Silver → Gold flow, model testing, snapshot creation, and macro usage.
 
 Full Dev → Prod workflow supported via dbt targets and catalog configuration.
+
 
 
