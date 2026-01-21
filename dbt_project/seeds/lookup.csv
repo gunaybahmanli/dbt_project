@@ -1,0 +1,12 @@
+customer_id,customer_name,email,phone,address,city,state,postal_code,country
+1,John Smith,john.smith@email.com,555-0101,123 Main St,New York,NY,10001,USA
+2,Mary Johnson,mary.johnson@email.com,555-0102,456 Oak Ave,Los Angeles,CA,90001,USA
+3,Robert Brown,robert.brown@email.com,555-0103,789 Pine Rd,Chicago,IL,60601,USA
+4,Patricia Davis,patricia.davis@email.com,555-0104,321 Elm St,Houston,TX,77001,USA
+5,Michael Wilson,michael.wilson@email.com,555-0105,654 Maple Dr,Phoenix,AZ,85001,USA
+6,Jennifer Moore,jennifer.moore@email.com,555-0106,987 Cedar Ln,Philadelphia,PA,19101,USA
+7,William Taylor,william.taylor@email.com,555-0107,147 Birch St,San Antonio,TX,78201,USA
+8,Linda Anderson,linda.anderson@anderson.com,555-0108,258 Ash Pl,San Diego,CA,92101,USA
+9,David Thomas,david.thomas@email.com,555-0109,369 Oak Ln,Dallas,TX,75201,USA
+10,Barbara Jackson,barbara.jackson@email.com,555-0110,741 Pine Ave,San Jose,CA,95101,USA 
+
